@@ -1,29 +1,77 @@
-# proyecto-final-pnt2
+# 🗂️ Gestor de Tareas - Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+Este es el frontend del proyecto final de Programación en Nuevas Tecnologías 2. Se trata de una aplicación web desarrollada con **Vue 3 + Vite**, que permite gestionar tareas con filtros, categorías y validaciones personalizadas.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Requisitos
 
-## Customize configuration
+- Node.js
+- npm 
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+## ⚙️ Instalación
 
-```sh
+1. Cloná el repositorio:
+
+git clone https://github.com/fedecotler/proyecto-final-pnt2.git
+
+2. Entrá al directorio del proyecto:
+
+cd proyecto-final-pnt2
+
+3. Instalá las dependencias:
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
+## ▶️ Uso
+Asegurate de tener corriendo el backend (puerto 3000 por defecto).
 
-```sh
+Iniciá el servidor de desarrollo:
+
 npm run dev
-```
 
-### Compile and Minify for Production
+Accedé a la app desde: http://localhost:5173
 
-```sh
-npm run build
-```
+## 🧩 Funcionalidades principales
+
+-Crear, editar y eliminar tareas.
+
+-Asignar estado y fecha límite a cada tarea.
+
+-Asignar categoría a cada tarea.
+
+-Filtrar tareas por estado o por categoría.
+
+-Ver tareas ordenadas por fecha de vencimiento.
+
+-Gestión de categorías: crear y eliminar.
+
+-Validaciones visuales y funcionales en formularios.
+
+## 👥 Integrantes
+
+-Gastón Kopplin Alva
+
+-Federico Cotler
+
+-Francisco Nicolini
+
+## 📁 Estructura de carpetas
+src/
+├── components/ → Componentes Vue reutilizables
+├── views/ → Vistas principales del router
+├── services/ → Axios y servicios externos
+├── stores/ → Pinia (estado global)
+├── router/ → Configuración de rutas
+└── App.vue → Layout principal
+
+## 🔗 Notas
+
+Este frontend está conectado a un backend desarrollado con Node.js, Express y Sequelize.
+
+Las tareas y categorías se almacenan en una base de datos MySQL a través del backend.
+
+👉 Podés encontrar el repositorio del backend en:
+https://github.com/GastiKopp/backend-proyecto-final-tp2.git
