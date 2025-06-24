@@ -50,8 +50,14 @@ defineProps({
 });
 
 const formatDate = (dateStr) => {
+  if (!dateStr) return 'Fecha no válida';
   const date = new Date(dateStr);
-  return date.toLocaleDateString("es-AR");
+  if (isNaN(date)) return 'Fecha no válida';
+
+  // Ajusta para mostrar la fecha real (sin corrimiento horario)
+  return date.toLocaleDateString('es-AR', {
+    timeZone: 'UTC'
+  });
 };
 
 const statusClass = (status) => {
