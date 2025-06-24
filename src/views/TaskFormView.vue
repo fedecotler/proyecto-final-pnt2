@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-4">
-    <h2 class="mb-4">{{ isEdit ? "Editar Tarea" : "Nueva Tarea" }}</h2>
+    <h2 class="mb-4"><u>{{ isEdit ? "Editar Tarea" : "Nueva Tarea" }}</u></h2>
 
     <TaskForm
       v-if="!isEdit || task.title !== ''"

@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-4">
-    <h2 class="mb-2">Listado de Tareas</h2>
+    <h2 class="mb-2"><u>Listado de Tareas</u></h2>
 
     <p class="mb-3">
       Mostrando {{ tareasFiltradas.length }} tarea{{ tareasFiltradas.length !== 1 ? 's' : '' }}
