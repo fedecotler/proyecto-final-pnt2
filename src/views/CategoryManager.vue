@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-4">
-    <h2 class="mb-4">Gestión de Categorías</h2>
+    <h2 class="mb-4"><u>Gestión de Categorías</u></h2>
 
     <form @submit.prevent="crearCategoria" class="mb-3 d-flex gap-2">
       <input

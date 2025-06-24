@@ -12,12 +12,14 @@
     </header>
 
     <main class="container my-4 flex-grow-1">
-      <router-view />
+        <transition name="fade" mode="out-in">
+          <router-view />
+        </transition>
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-auto">
       <div>
-        © 2025 - Trabajo Práctico Final PNT2 - 🗂️
+        © 2025 - Trabajo Práctico Final PNT2 y TP2 - 🗂️
       </div>
       <small>Hecho por Gastón Kopplin Alva, Federico Cotler y Francisco Nicolini</small>
     </footer>
@@ -29,3 +31,18 @@
   display: none !important;
 }
 </style>
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-enter-from {
+  opacity: 0;
+  transform: translateX(30px);
+}
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+</style>
+
